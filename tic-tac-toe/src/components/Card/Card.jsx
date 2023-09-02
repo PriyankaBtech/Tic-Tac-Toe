@@ -1,6 +1,6 @@
 import Icon from "../Icon/Icon";
 
-function Card() {
+function Card(player) {
     let icon = <Icon/>
     if(player === 'X') {
         icon = <Icon name="cross"/>
@@ -8,7 +8,7 @@ function Card() {
         icon = <Icon name="circle"/>
     }
     return (
-        <div className="icon">
+        <div className="card">
              {icon}
         </div>
     )
